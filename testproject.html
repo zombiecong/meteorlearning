@@ -1,0 +1,27 @@
+<head>
+  <title>测试</title>
+</head>
+
+<body>
+  <h1>测试</h1>
+
+  {{> hello}}
+
+  
+</body>
+
+<template name="hello">
+  {{ username }}
+
+  {{#each people}}
+  <p>{{> add}}</p>
+  {{/each}}
+</template>
+
+
+<template name="add">
+  <button>Click Me</button>
+  <p>{{name}}</p>
+</template>
+
+
